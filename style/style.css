@@ -18,3 +18,149 @@
   --error-font-color: #8d0000;
 }
 
+body {
+  background-color: #141414;
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+main {
+  width: 70vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 470px auto;
+}
+
+.main-img {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-img > img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-img-logo-bg {
+  width: 100%;
+  height: min-content;
+  background-color: #00000040;
+  padding: 5px 0 5px 120px;
+  position: absolute;
+  top: 200px;
+}
+
+.main-img-logo-bg > p {
+  display: inline-block;
+  color: #ffffffda;
+  font-family: heorot;
+  font-size: 80px;
+  position: absolute;
+  top: 20px;
+}
+
+.main-img-credit {
+  color: #999999cc;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.main-img-credit > a {
+  color: #ffffff;
+}
+
+.form-description {
+  font-size: 1.25rem;
+  line-height: 140%;
+  padding: 10px 40px 50px 40px;
+}
+
+.form-description > p + p {
+  padding-top: 20px;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+}
+
+.main-form {
+  padding-top: 150px;
+  overflow: auto;
+}
+
+.main-form > form {
+  font-size: 0.85rem;
+  padding: 20px 20px 20px 40px;
+  box-shadow: 2px 2px 8px #acacac;
+  overflow: auto;
+}
+
+.main-form-inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 20px 60px;
+}
+
+form > h3 {
+  font-size: 1.4rem;
+  padding-bottom: 25px;
+}
+
+label:not([for="phone-number"]):after {
+  content: ' *required';
+  font-size: 0.65rem;
+}
+
+input {
+  width: 220px;
+  height: 8px;
+  padding: 10px;
+  border: 1px solid #9999995b;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 1px solid var(--main-accent-color);
+}
+
+input[type="password"] + span {
+  color: var(--error-font-color);
+  font-size: 0.65rem;
+}
+
+#password:invalid + span::after {
+  content: '*Password must have a minimum length of 5.';
+}
+
+button[type="submit"] {
+  background-color: var(--main-accent-color);
+  color: #ffffff;
+  padding: 10px 25px 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #223500;
+}
+
+.form-login {
+  font-size: 0.92rem;
+  padding: 20px 0 0 40px;
+}
+
+.form-login > a {
+  color: #385800;
+  text-decoration: none;
+}
