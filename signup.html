@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Project: Sign-Up Form</title>
+    <link rel="stylesheet" href="style/meyer-reset.css">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="main-img">
+        <div class="main-img-logo-bg">
+          <img src="images/odin-lined.png" alt="odin project logo"> 
+          <p>Odin</p>
+        </div>
+        <img src="images/aedrian-ZUFZtLwmIR8-unsplash.jpg" alt="photo by @aedrian on unsplash">
+        <span class="main-img-credit">Photo by <a href="https://unsplash.com/@aedrian">Aedrian</a> on <a href="https://unsplash.com/t/nature">Unsplash</a></span>
+      </div>
   
-</body>
+      <div class="main-form">
+        <div class="form-description">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.Sign up now to get started.</p>
+          <p>You know you want to.</p>
+        </div>
+
+        <form action="#" method="post">
+          <h3>Let's do this!</h3>
+          <div class="main-form-inputs">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required>
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" name="phone-number" id="phone-number">
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" minlength="5" required>
+              <span> </span>
+            </div>
+            <div>
+              <label for="password-confirm">Confirm Password</label>
+              <input type="password" name="password-confirm" id="password-confirm" minlength="5" required>
+              <span> </span>
+            </div>
+            <div>
+              <button type="submit">Create Account</button>
+            </div>
+          </div>
+        </form>
+        <p class="form-login">Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
