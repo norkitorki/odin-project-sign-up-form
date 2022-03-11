@@ -12,3 +12,9 @@
   font-style: normal;
 }
 
+:root {
+  --main-font: pathway-extreme-semibold, Helvetica, sans-serif, Arial;
+  --main-accent-color: #141f00;
+  --error-font-color: #8d0000;
+}
+
