@@ -1,0 +1,14 @@
+@font-face {
+  font-family: pathway-extreme-semibold;
+  src: url('../fonts/PathwayExtreme-SemiBold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: heorot;
+  src: url('../fonts/Heorot-4rLK.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
